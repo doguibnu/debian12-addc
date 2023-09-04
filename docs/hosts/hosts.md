@@ -1,7 +1,5 @@
 ##Editar o arquivo hosts
 
-
-
 Para editar o arquivo, execute o comando:
 
 ```
@@ -16,7 +14,12 @@ Edite esta linha abaixo para atender seu cenário:
 
 `10.1.1.21   DEBIAN12-AD.seu.dominio    DEBIAN12-AD`
 
-Onde:
+Salvar o arquivo
+
+salvar: `control+o` e sair: `control+x`
+
+**Onde:**
+
 
 
 `10.1.1.21 = ip do seu próprio AD`
