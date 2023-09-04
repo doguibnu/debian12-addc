@@ -1,9 +1,7 @@
 # Debian 12 como AD-DC
 
 
-Meu [GitHub]([doguibnu (Douglas G. Oechsler) · GitHub](https://github.com/doguibnu))
-
-
+Meu [GitHub](https://github.com/doguibnu)
 
 
 
