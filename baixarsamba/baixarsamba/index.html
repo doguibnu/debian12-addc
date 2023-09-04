@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt_BR" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Baixar o Samba - Debian 12 AD-DC</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Baixar o Samba";
+        var mkdocs_page_input_path = "baixarsamba/baixarsamba.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Debian 12 AD-DC
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Digite o termo a ser buscado aqui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AD-DC Debian 12</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../install/instalar/">Baixar Debian 12</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instpacotes/instpacotes/">Instalar Pacotes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../timedate/timedate/">TimeDate (ntp server)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hosts/hosts/">Editar Arquivo hosts</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Baixar o Samba</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../aprofile/aprofile/">Editar Arquivo profile</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../provsamba/provsamba/">Provisionar o Samba</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../linklib/linklib/">Linkar libnss</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../krb5/krb5conf/">Editar o arquivo krb5.conf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../systemdad/systemdad/">Serviço systemd AD-DC</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../joinwin/joinwin/">Win10 Join Debian AD-DC</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navegação em dispositivo móvel">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Debian 12 AD-DC</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documentos"></a> &raquo;</li>
+          <li>AD-DC Debian 12 &raquo;</li>
+      <li class="breadcrumb-item active">Baixar o Samba</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="baixar-o-samba">Baixar o Samba</h2>
+<p><strong>Obs:</strong>  a versão a ser baixada será a <code>4.18.6</code>.</p>
+<p>Fazer um <code>diretório</code> temporário para baixar o samba:</p>
+<pre><code>mkdir tempsamba
+</code></pre>
+<p>Mudar para o diretório criado:</p>
+<pre><code>cd tempsamba
+</code></pre>
+<p><code>Baixar</code> o samba com o comando:</p>
+<pre><code>wget https://download.samba.org/pub/samba/stable/samba-4.18.6.tar.gz
+</code></pre>
+<p><code>Descompactar</code>o arquivo baixado:</p>
+<pre><code>tar -zxvf samba-nome-arquivo
+</code></pre>
+<p><code>Mudar</code> para o diretório onde foi descompactado:</p>
+<pre><code>cd samba-nome-arquivo/
+</code></pre>
+<p><strong>Compilar</strong> o <code>samba</code> para o arquivo de configuração ficar em: <code>/etc/samba/smb.conf</code>com o comando:</p>
+<pre><code>./configure --sysconfdir=/etc/samba/
+</code></pre>
+<p>Se não houver nenhum erro, o sistema deve apresentar um resultado parecido como abaixo: </p>
+<pre><code>Checking if compiler accepts -fstack-clash-protection : yes 
+'configure' finished successfully (1m10.556s)
+</code></pre>
+<p>Fazer os comandos <code>make</code> e <code>make install</code>:</p>
+<p><strong>OBS:</strong> dependendo de sua configuração este procedimento é demorado, então aguarde a finalização:</p>
+<pre><code>make &amp;&amp; make install
+</code></pre>
+<p>Se nenhum erro ocorrer no procedimento, o sistema vai mostrar um resultado parecido como abaixo: </p>
+<pre><code>Waf: Leaving directory `/root/tempsamba/samba-4.18.6/bin/default'
+'install' finished successfully (4m36.452s)
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegação no rodapé">
+        <a href="../../hosts/hosts/" class="btn btn-neutral float-left" title="Editar Arquivo hosts"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../../aprofile/aprofile/" class="btn btn-neutral float-right" title="Editar Arquivo profile">Seguinte <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Construído com <a href="https://www.mkdocs.org/">MkDocs</a> usando <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provido por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versões">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../hosts/hosts/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../../aprofile/aprofile/" style="color: #fcfcfc">Seguinte &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

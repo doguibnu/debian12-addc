@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt_BR" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Instalar Pacotes - Debian 12 AD-DC</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Instalar Pacotes";
+        var mkdocs_page_input_path = "instpacotes/instpacotes.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Debian 12 AD-DC
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" title="Digite o termo a ser buscado aqui" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Início</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">AD-DC Debian 12</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../install/instalar/">Baixar Debian 12</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Instalar Pacotes</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../timedate/timedate/">TimeDate (ntp server)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hosts/hosts/">Editar Arquivo hosts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../baixarsamba/baixarsamba/">Baixar o Samba</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../aprofile/aprofile/">Editar Arquivo profile</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../provsamba/provsamba/">Provisionar o Samba</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../linklib/linklib/">Linkar libnss</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../krb5/krb5conf/">Editar o arquivo krb5.conf</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../systemdad/systemdad/">Serviço systemd AD-DC</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../joinwin/joinwin/">Win10 Join Debian AD-DC</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Menu de navegação em dispositivo móvel">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Debian 12 AD-DC</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Documentos"></a> &raquo;</li>
+          <li>AD-DC Debian 12 &raquo;</li>
+      <li class="breadcrumb-item active">Instalar Pacotes</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="instalar-pacotes">Instalar Pacotes</h1>
+<p>Pacotes requeridos para instalação do samba em modo compilado. Utilizar o comando abaixo:</p>
+<pre><code>apt-get install -y acl attr autoconf bind9utils bison build-essential debhelper dnsutils docbook-xml docbook-xsl flex gdb libjansson-dev krb5-user libacl1-dev libaio-dev libarchive-dev libattr1-dev libblkid-dev libbsd-dev libcap-dev libcups2-dev libgnutls28-dev libgpgme-dev libjson-perl libldap2-dev libncurses5-dev libpam0g-dev libparse-yapp-perl libpopt-dev libreadline-dev nettle-dev perl perl-modules-5.36 pkg-config python3-all-dev python3-cryptography python3-dbg python3-dev python3-dnspython python3-dnspython python3-gpg python3-markdown python3-dev xsltproc zlib1g-dev liblmdb-dev lmdb-utils libkrb5-dev krb5-kdc libdbus-1-dev libtasn1-bin winbind
+</code></pre>
+<p><strong>Obs:</strong> altere os dados conforme seu cenário.</p>
+<p>Primeiro questionamento, informar seu: </p>
+<p><strong>Realm Kerberos:</strong> <code>SEU.DOMINIO</code></p>
+<p>Repetir: <code>SEU.DOMINIO</code></p>
+<p><strong>Servidor administrador: </strong><code>debian12-ad.seu.dominio</code></p>
+<p>e repita a resposta anterior.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Navegação no rodapé">
+        <a href="../../install/instalar/" class="btn btn-neutral float-left" title="Baixar Debian 12"><span class="icon icon-circle-arrow-left"></span> Anterior</a>
+        <a href="../../timedate/timedate/" class="btn btn-neutral float-right" title="TimeDate (ntp server)">Seguinte <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Construído com <a href="https://www.mkdocs.org/">MkDocs</a> usando <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provido por <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versões">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../install/instalar/" style="color: #fcfcfc">&laquo; Anterior</a></span>
+    
+    
+      <span><a href="../../timedate/timedate/" style="color: #fcfcfc">Seguinte &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
