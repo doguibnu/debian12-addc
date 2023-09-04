@@ -1,5 +1,12 @@
 # Debian 12 como AD-DC
 
+
+Meu [GitHub]([doguibnu (Douglas G. Oechsler) · GitHub](https://github.com/doguibnu))
+
+
+
+
+
 <img src="logo-debian12.jpeg" title="" alt="text-alt" width="231">
 
 O documento tem como finalidade, ajudar administradores de sistema com a instalação do **Samba AD-DC** em modo compilado no sistema operacional **Debian 12.** 
@@ -7,8 +14,6 @@ O documento tem como finalidade, ajudar administradores de sistema com a instala
 A versão do **Samba** será a **4.18.6**
 
 <img src="logo-samba.png" title="" alt="alt text" width="270">
-
-
 
 Referências:
 
