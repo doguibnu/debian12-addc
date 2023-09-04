@@ -1,0 +1,22 @@
+site_name: Debian 12 AD-DC
+nav:
+   - Início: 'index.md'
+   - 'AD-DC Debian 12':
+      - 'Baixar Debian 12': 'install/instalar.md'
+      - 'Instalar Pacotes': 'instpacotes/instpacotes.md'
+      - 'TimeDate (ntp server)': 'timedate/timedate.md'
+      - 'Editar Arquivo hosts': 'hosts/hosts.md'
+      - 'Baixar o Samba': 'baixarsamba/baixarsamba.md'
+      - 'Editar Arquivo profile': 'aprofile/aprofile.md'
+      - 'Provisionar o Samba': 'provsamba/provsamba.md'
+      - 'Linkar libnss': 'linklib/linklib.md'
+      - 'Editar o arquivo krb5.conf': 'krb5/krb5conf.md'
+      - 'Serviço systemd AD-DC': 'systemdad/systemdad.md'
+      - 'Win10 Join Debian AD-DC': 'joinwin/joinwin.md'
+theme:
+  name: readthedocs
+  locale: pt_BR
+  repo_url: https://github.com/doguibnu/debian12-addc
+  icon:
+  repo: fontawesome/brands/github
+
