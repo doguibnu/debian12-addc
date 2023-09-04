@@ -20,8 +20,6 @@ salvar: `control+o` e sair: `control+x`
 
 **Onde:**
 
-
-
 `10.1.1.21 = ip do seu próprio AD`
 
 `DEBIAN12-AD.seu.domínio = nome completo do seu DC`
