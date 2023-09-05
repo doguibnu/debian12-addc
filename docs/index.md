@@ -14,6 +14,4 @@ Referências:
 
 [kinit](https://serverfault.com/questions/166768/kinit-wont-connect-to-a-domain-server-realm-not-local-to-kdc-while-getting-in)
 
-
-
 [Douglas G. Oechsler · GitHub](https://github.com/doguibnu)
